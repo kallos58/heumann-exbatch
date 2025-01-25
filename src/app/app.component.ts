@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import * as Cosmos from "@azure/cosmos";
 
 @Component({
   selector: 'app-root',

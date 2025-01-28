@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import * as Cosmos from "@azure/cosmos";
+import { RouterOutlet, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,5 +8,13 @@ import * as Cosmos from "@azure/cosmos";
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'heumann-exbatch';
+
+  constructor( private router: Router ) {
+   
+  }
+  
+  goHome() {
+    this.router.navigate(['/']);
+  }
+
 }
